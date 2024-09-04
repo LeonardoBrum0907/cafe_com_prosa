@@ -30,4 +30,10 @@
 body {
       font-family: 'text', sans-serif;
       font-size: 1.1rem;
+
+      .left {
+            transform: translatex(100%);
+            transition: all 0.2s linear;
+            opacity: 0;
+      }
 }

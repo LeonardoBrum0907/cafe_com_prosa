@@ -6,7 +6,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="flex items-center gap-8 px-4 sm:px-20 py-8 sm:py-10 w-full">
+    <header className="flex items-center gap-8 px-4 sm:px-20 sm:py-4 w-full fixed bg-green-main z-10">
       <img src={logo} className="hidden sm:block" alt="café com prosa" width={150} height={150} />
 
       <nav className="w-full">
@@ -38,7 +38,7 @@ const Navbar = () => {
           {/* Links do menu (escondidos no mobile, visíveis no desktop) */}
           <div className={`w-full flex flex-col lg:flex-row items-center justify-center text-white text-center lg:text-left transform transition-all duration-300 ease-in-out ${isOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
             } lg:max-h-full lg:opacity-100 overflow-hidden lg:overflow-visible`}>
-            <ul className="flex flex-col lg:flex-row lg:space-x-8 lg:items-center text-white text-center lg:text-left">
+            <ul className="flex flex-col lg:flex-row lg:space-x-8 lg:items-center text-white text-center lg:text-left text-sm">
               <li>
                 <a href="#" className="hover:text-slate-200 uppercase">Quem somos</a>
               </li>

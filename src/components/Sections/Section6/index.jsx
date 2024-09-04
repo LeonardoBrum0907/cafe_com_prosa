@@ -23,7 +23,7 @@ const Section6 = () => {
                         start: "40% bottom",
                         end: "90% 90%",
                         scrub: true,
-                        markers: true,
+                        // markers: true,
                   },
             })
       }, [])

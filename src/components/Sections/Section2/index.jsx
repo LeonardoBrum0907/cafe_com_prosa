@@ -52,13 +52,13 @@ const Section2 = () => {
                               opacity: 1,
                               y: 0,
                         })
-                        .fromTo("#animation-item-3", {
-                              opacity: 0,
-                              x: 160,
-                        }, {
-                              opacity: 1,
-                              x: 0,
-                        })
+                        // .fromTo("#animation-item-3", {
+                        //       opacity: 0,
+                        //       x: 160,
+                        // }, {
+                        //       opacity: 1,
+                        //       x: 0,
+                        // })
             }, el)
 
             return () => {

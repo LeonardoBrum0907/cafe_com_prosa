@@ -33,34 +33,34 @@ const Section5 = () => {
                         className="w-[23rem] pb-[2rem]"
                   />
                   <div className="flex gap-[1rem] relative">
-                        <div className="flex flex-col gap-[1rem]">
-                              <div className="bg-white p-[1rem] sm:w-[13rem] rounded-[1rem] pl-[1.5rem]">
-                                    <p className="text-blue-800">07 de setembro</p>
-                                    <p className="text-gray-600">9:00 am</p>
+                        <div className="flex flex-col gap-[1rem] sm:w-[20rem]">
+                              <div className="bg-white py-[2rem] rounded-3xl px-[0.5rem] sm:px-[1.5rem]">
+                                    <p className="text-blue-800 font-title sm:text-xl">07 de setembro</p>
+                                    <p className="text-gray-600 font-title sm:text-xl">9:00 am</p>
                               </div>
-                              <div className="bg-yellow-500 p-[1rem] rounded-[1rem] pl-[1.5rem]">
-                                    <p className="text-blue-800">07 de setembro</p>
-                                    <p className="text-gray-600">9:00 am</p>
+                              <div className="bg-yellow-500 py-[2rem] rounded-3xl px-[0.5rem] sm:px-[1.5rem]">
+                                    <p className="text-blue-800 font-title sm:text-xl">07 de setembro</p>
+                                    <p className="text-gray-600 font-title sm:text-xl">9:00 am</p>
                               </div>
                         </div>
-                        <div className="flex flex-col gap-[1rem]">
-                              <div className="bg-yellow-500 p-[1rem] w-[10rem] sm:w-[13rem] rounded-[1rem] pl-[1.5rem]">
-                                    <p className="text-blue-800">07 de setembro</p>
-                                    <p className="text-gray-600">9:00 am</p>
+                        <div className="flex flex-col gap-[1rem] sm:w-[20rem]">
+                              <div className="bg-yellow-500 py-[2rem] rounded-3xl px-[0.5rem] sm:px-[1.5rem]">
+                                    <p className="text-blue-800 font-title sm:text-xl">07 de setembro</p>
+                                    <p className="text-gray-600 font-title sm:text-xl">9:00 am</p>
                               </div>
-                              <div className="bg-yellow-500 p-[1rem] rounded-[1rem] pl-[1.5rem]">
-                                    <p className="text-blue-800">07 de setembro</p>
-                                    <p className="text-gray-600">9:00 am</p>
+                              <div className="bg-yellow-500 py-[2rem] rounded-3xl px-[0.5rem] sm:px-[1.5rem]">
+                                    <p className="text-blue-800 font-title sm:text-xl">07 de setembro</p>
+                                    <p className="text-gray-600 font-title sm:text-xl">9:00 am</p>
                               </div>
                         </div>
                         <img
                               src={losangulo}
-                              className="w-[1.5rem] h-[1rem] absolute top-[45%] sm:top-[46.5%] left-[45%] sm:left-[47%]"
+                              className="w-[1.5rem] h-[1rem] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]"
                         />
                   </div>
                   <img
                         src={cafeteira}
-                        className=" w-[12rem] sm:w-[20rem] absolute right-[7%] sm:right-[10%] bottom-[8%] sm:bottom-[5%]"
+                        className=" w-[10rem] sm:w-[25rem] absolute right-[50%] translate-x-1/2 sm:right-[20%] bottom-0 sm:bottom-[5%]"
                   />
             </Section>
       )

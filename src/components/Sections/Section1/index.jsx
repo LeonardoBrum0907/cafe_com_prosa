@@ -1,13 +1,29 @@
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
 import Section from '../../SectionLayout';
 import imagem01 from "/assets/images/imagem_01.png";
 import quemSomos from "/assets/images/quem_somos.png";
 import cafeComProsa from "/assets/images/selo01.png";
 
 const Section1 = () => {
+      useGSAP(() => {
+            gsap.fromTo('.fade-in', {
+                  opacity: 0,
+                  y: 100,
+                  delay: 0.5,
+                  duration: 0.2,
+            }, {
+                  opacity: 1,
+                  y: 0,
+                  delay: 0.5,
+                  duration: 0.2,
+            })
+      }, [])
+
       return (
             <>
-                  <Section>
-                        <div className="flex justify-center">
+                  <Section className="mt-[5rem]">
+                        <div className="fade-in flex justify-center">
                               <img
                                     src={cafeComProsa}
                                     alt="café com prosa"
@@ -15,7 +31,7 @@ const Section1 = () => {
                               />
                         </div>
 
-                        <div className="flex flex-col items-center sm:flex-row gap-8 sm:gap-16 mt-20">
+                        <div className="fade-in flex flex-col items-center sm:flex-row gap-8 sm:gap-16 mt-20">
                               <img src={quemSomos} alt="" className="w-[50%] sm:w-full" />
 
                               <p className="text-white">

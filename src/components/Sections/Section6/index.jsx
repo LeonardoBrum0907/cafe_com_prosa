@@ -30,11 +30,11 @@ const Section6 = () => {
 
       return (
             <Section className="section bg-white flex justify-center items-center relative overflow-hidden">
-                  <div className="flex items-center gap-[1rem]">
-                        <div>
-                              <img src={nossasRedes} className="w-[15rem]" />
+                  <div className="flex flex-col sm:flex-row items-center gap-[2rem]">
+                        <div className="w-1/2 sm:w-1/3 shrink-0 flex justify-center">
+                              <img src={nossasRedes}  />
                         </div>
-                        <div className="flex flex-col gap-[1rem]">
+                        <div className="flex flex-col gap-[1rem] ">
                               <div className="flex gap-[1rem]">
                                     <img src={icone01} className="w-[rem] h-[2.5rem]" />
                                     <p>Lorem ipsum dolor sit amet, consectetur </p>

@@ -15,30 +15,50 @@ const Section2 = () => {
 
       React.useLayoutEffect(() => {
             gsap.registerPlugin(useGSAP, ScrollTrigger);
+
+            gsap.to('.left', {
+                  x: 0,
+                  opacity: 1,
+                  scrollTrigger: {
+                        trigger: '.animation',
+                        start: "top bottom",
+                        end: "80% 90%",
+                        scrub: true,
+                        // markers: true,
+                  },
+            })
+
             const ctx = gsap.context(() => {
                   tl.current = gsap.timeline({
                         scrollTrigger: {
                               trigger: ".animation-timeline",
                               scrub: true,
-                              markers: true,
+                              // markers: true,
                               start: "top bottom",
-                              end: "center 80%",
+                              end: "80% 90%",
                         }
                   })
-                  .fromTo("#animation-item-1", {
-                        opacity: 0,
-                        y: 160,
-                  },{
-                        opacity: 1,
-                        y: 0,
-                  })
-                  .fromTo("#animation-item-2", {
-                        opacity: 0,
-                        y: 160,
-                  },{
-                        opacity: 1,
-                        y: 0,
-                  })
+                        .fromTo("#animation-item-1", {
+                              opacity: 0,
+                              y: 160,
+                        }, {
+                              opacity: 1,
+                              y: 0,
+                        })
+                        .fromTo("#animation-item-2", {
+                              opacity: 0,
+                              y: 160,
+                        }, {
+                              opacity: 1,
+                              y: 0,
+                        })
+                        .fromTo("#animation-item-3", {
+                              opacity: 0,
+                              x: 160,
+                        }, {
+                              opacity: 1,
+                              x: 0,
+                        })
             }, el)
 
             return () => {
@@ -48,10 +68,10 @@ const Section2 = () => {
 
       return (
             <Section className="bg-blue-700 flex flex-col items-center justify-center gap-9 relative">
-                  <div>
-                        <img src={parceiros} alt="Parceiros" className="w-80" />
+                  <div className="animation flex justify-center">
+                        <img src={parceiros} alt="Parceiros" className="w-2/3 sm:w-80 left" />
                   </div>
-                  <div ref={el} className="flex flex-col w-4/5 sm:w-full sm:flex-row gap-20 text-white">
+                  <div ref={el} className="flex flex-col w-full sm:flex-row gap-20 text-white">
                         <div id="animation-item-1" className="animation-timeline flex items-center flex-col gap-8 ease-in-out duration-200">
                               <img src={kingsland} alt="Kingsland" className="w-full" />
                               <p>

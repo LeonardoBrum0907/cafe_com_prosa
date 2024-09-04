@@ -26,12 +26,12 @@ const Section3 = () => {
       // }, [])
 
       return (
-            <Section className="animation sm:pt-[2rem] bg-white flex flex-col sm:flex-row gap-12 items-center justify-center">
-                  <div className="flex flex-col gap-12 items-center w-4/5 sm:w-6/12 text-blue-800 left">
+            <Section className="bg-yellow-50 flex flex-col sm:flex-row gap-12 items-center justify-center">
+                  <div className="flex flex-col gap-12 items-center text-blue-800 sm:w-1/2">
                         <img
                               src={brasileiroEmKaty}
                               alt="Brasileiro morando em Katy?"
-                              className="w-full sm:w-4/5"
+                              className="w-3/5"
                         />
                         <p>
                               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
@@ -45,35 +45,23 @@ const Section3 = () => {
                               Integer non.
                         </p>
                   </div>
-                  <div className=" text-yellow-400 flex flex-col items-center gap-8">
-                        <div className="bg-green-main sm:flex sm:flex-col sm:gap-y-[0.8rem] p-8 sm:px-[2.3rem] sm:pb-[2rem] sm:pt-[3.8rem] w-[20rem] sm:w-[23rem] rounded-2xl relative">
-                              <div>
-                                    <p>NOME</p>
-                                    <Input />
-                              </div>
-                              <div>
-                                    <p>EMAIL</p>
-                                    <Input />
-                              </div>
-                              <div>
-                                    <p>TELEFONE</p>
-                                    <Input />
-                              </div>
-                              <div>
-                                    <p>INSTAGRAM</p>
-                                    <Input />
-                              </div>
+                  <form className=" text-yellow-400 flex flex-col items-center gap-8 w-full sm:w-1/2">
+                        <div className="bg-green-main sm:flex sm:flex-col sm:gap-y-[0.8rem] p-8 sm:px-[2.3rem] sm:pb-[2rem] sm:pt-[3.8rem] w-full shrink-0 rounded-2xl relative">
+                              <Input label="NOME" />
+                              <Input label="EMAIL" />
+                              <Input label="TELEFONE" />
+                              <Input label="INSTAGRAM" />
                               <img
                                     src={cafezinho}
                                     alt="xicara de café"
-                                    className="absolute w-[5.8rem] sm:w-[7rem] top-[-13%] sm:top-[-14%] right-[18%] sm:right-[30%]"
+                                    className="absolute w-[5.8rem] sm:w-[7rem] top-0 left-[50%] -translate-x-1/2 -translate-y-1/2"
                               />
                         </div>
 
-                        <div className=" bg-blue-800 rounded-3xl w-[15rem] sm:w-44">
-                              <p className="text-center py-2">QUERO PARTICIPAR!</p>
-                        </div>
-                  </div>
+                        <button className=" bg-blue-700 hover:bg-blue-800 rounded-full sm:w-2/3 py-4 px-6 shadow-2xl hover:scale-105 ease-in-out duration-200">
+                              QUERO PARTICIPAR!
+                        </button>
+                  </form>
             </Section>
       )
 }

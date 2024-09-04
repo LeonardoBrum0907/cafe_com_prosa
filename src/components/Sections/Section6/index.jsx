@@ -12,7 +12,6 @@ import nossasRedes from "/assets/images/nossas_redes.png";
 
 const Section6 = () => {
 
-
       React.useLayoutEffect(() => {
             gsap.registerPlugin(useGSAP, ScrollTrigger);
 
@@ -29,7 +28,7 @@ const Section6 = () => {
       }, [])
 
       return (
-            <Section className="section-6 bg-white flex justify-center items-center relative overflow-hidden">
+            <Section id="section-6" className="section-6 bg-white flex justify-center items-center relative overflow-hidden">
                   <div className="fade-down-section-6 opacity-0 flex flex-col sm:flex-row items-center gap-[2rem]">
                         <div className="w-1/2 sm:w-1/3 shrink-0 flex justify-center">
                               <img src={nossasRedes}  />

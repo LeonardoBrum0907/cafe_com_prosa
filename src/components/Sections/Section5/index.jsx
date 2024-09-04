@@ -38,7 +38,7 @@ const Section5 = () => {
       }, [])
 
       return (
-            <Section className="bg-table bg-right-bottom sm:bg-cover bg-no-repeat bg-blue-800 flex flex-col items-center sm:items-start justify-start sm:justify-center relative">
+            <Section id="section-5" className="bg-table bg-right-bottom sm:bg-cover bg-no-repeat bg-blue-800 flex flex-col items-center sm:items-start justify-start sm:justify-center relative">
                   <img
                         src={calendario}
                         alt="calendário"

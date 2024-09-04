@@ -22,7 +22,7 @@ const Section1 = () => {
 
       return (
             <>
-                  <Section className="mt-[5rem]">
+                  <Section id="section-1" className="mt-[5rem]">
                         <div className="fade-in flex justify-center">
                               <img
                                     src={cafeComProsa}

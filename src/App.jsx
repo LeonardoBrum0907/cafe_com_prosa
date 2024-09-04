@@ -16,15 +16,15 @@ function App() {
 
         <Section1 />
 
-        <Section2 />
+        <Section2 id="section-2" />
 
-        <Section3 />
+        <Section3 id="section-3" />
 
-        <Section4 />
+        <Section4 id="section-4" />
 
-        <Section5 />
+        <Section5 id="section-5" />
 
-        <Section6 />
+        <Section6 id="section-6" />
       </main>
 
     </>

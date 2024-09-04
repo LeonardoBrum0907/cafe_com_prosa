@@ -5,9 +5,20 @@ import logo from "/logo.png";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const handleScroll = (event, sectionId) => {
+    event.preventDefault();
+    const section = document.querySelector(sectionId);
+    if (section) {
+      section.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  };
+
   return (
     <header className="flex items-center gap-8 px-4 sm:px-20 py-4 w-full fixed bg-green-main z-10">
-      <img src={logo} className="hidden sm:block" alt="café com prosa" width={150} height={150} />
+      <img src={logo} className="hidden sm:block" alt="café com prosa" width={100} height={100} />
 
       <nav className="w-full">
         <div className="container mx-auto flex justify-between items-center">
@@ -40,27 +51,27 @@ const Navbar = () => {
             } lg:max-h-full lg:opacity-100 overflow-hidden lg:overflow-visible`}>
             <ul className="flex flex-col lg:flex-row lg:space-x-8 lg:items-center text-white text-center lg:text-left text-sm">
               <li>
-                <a href="#" className="hover:text-slate-200 uppercase">Quem somos</a>
+                <a href="#section-1" onClick={(e) => handleScroll(e, '#section-1')} className="hover:text-slate-200 uppercase">Quem somos</a>
               </li>
               <img src={grafismoMenu} alt="" width={15} height={15} className="hidden md:block" />
               <li>
-                <a href="#" className="hover:text-slate-200 uppercase">Parceiros</a>
+                <a href="#section-2" onClick={(e) => handleScroll(e, '#section-2')} className="hover:text-slate-200 uppercase">Parceiros</a>
               </li>
               <img src={grafismoMenu} alt="" width={15} height={15} className="hidden md:block" />
               <li>
-                <a href="#" className="hover:text-slate-200 uppercase">Seja parte</a>
+                <a href="#section-3" onClick={(e) => handleScroll(e, '#section-3')} className="hover:text-slate-200 uppercase">Seja parte</a>
               </li>
               <img src={grafismoMenu} alt="" width={15} height={15} className="hidden md:block" />
               <li>
-                <a href="#" className="hover:text-slate-200 uppercase">Fotos</a>
+                <a href="#section-4" onClick={(e) => handleScroll(e, '#section-4')} className="hover:text-slate-200 uppercase">Fotos</a>
               </li>
               <img src={grafismoMenu} alt="" width={15} height={15} className="hidden md:block" />
               <li>
-                <a href="#" className="hover:text-slate-200 uppercase">Calendário</a>
+                <a href="#section-5" onClick={(e) => handleScroll(e, '#section-5')} className="hover:text-slate-200 uppercase">Calendário</a>
               </li>
               <img src={grafismoMenu} alt="" width={15} height={15} className="hidden md:block" />
               <li>
-                <a href="#" className="hover:text-slate-200 uppercase">Nossas redes</a>
+                <a href="#section-6" onClick={(e) => handleScroll(e, '#section-6')} className="hover:text-slate-200 uppercase">Nossas redes</a>
               </li>
             </ul>
           </div>

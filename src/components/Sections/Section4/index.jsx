@@ -30,7 +30,7 @@ const Section4 = () => {
       // }, [])
 
       return (
-            <section className="section h-[100vh] flex sm:block">
+            <section id="section-4" className="section h-[100vh] flex sm:block">
                   <div className="sm:h-[50%] sm:w-[100%] flex flex-col sm:flex-row relative">
                         <img
                               src={imagem03}

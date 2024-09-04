@@ -67,7 +67,7 @@ const Section2 = () => {
       }, [])
 
       return (
-            <Section className="bg-blue-700 flex flex-col items-center justify-center gap-9 relative">
+            <Section id="section-2" className="bg-blue-700 flex flex-col items-center justify-center gap-9 relative">
                   <div className="animation flex justify-center">
                         <img src={parceiros} alt="Parceiros" className="w-2/3 sm:w-80 left" />
                   </div>

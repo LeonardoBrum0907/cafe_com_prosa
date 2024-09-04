@@ -47,7 +47,7 @@ const Section3 = () => {
       }, [])
 
       return (
-            <Section className="bg-yellow-50">
+            <Section id="section-3" className="bg-yellow-50">
                   <div ref={element} className="flex flex-col sm:flex-row gap-12 items-center justify-center">
                         <div id="animation-to-right" className="animation-timeline flex flex-col gap-12 items-center text-blue-800 sm:w-1/2 ease duration-200">
                               <img

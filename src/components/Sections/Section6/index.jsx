@@ -1,57 +1,53 @@
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import React from "react";
-import Section from "../../SectionLayout";
+// import React from "react";
 import grafismo02 from "/assets/images/grafismo_02.png";
 import icone01 from "/assets/images/icone_01.png";
 import icone02 from "/assets/images/icone_02.png";
 import icone03 from "/assets/images/icone_03.png";
 import icone04 from "/assets/images/icone_04.png";
-import nossasRedes from "/assets/images/nossas_redes.png";
+import saibaMais from "/assets/images/saiba_mais.png";
 
 const Section6 = () => {
 
-      React.useLayoutEffect(() => {
-            gsap.registerPlugin(useGSAP, ScrollTrigger);
+      // React.useLayoutEffect(() => {
+      //       gsap.registerPlugin(useGSAP, ScrollTrigger);
 
-            gsap.to('.fade-down-section-6', {
-                  opacity: 1,
-                  scrollTrigger: {
-                        trigger: '.section-6',
-                        start: "40% bottom",
-                        end: "90% 90%",
-                        scrub: true,
-                        // markers: true,
-                  },
-            })
-      }, [])
+      //       gsap.to('.fade-down-section-6', {
+      //             opacity: 1,
+      //             scrollTrigger: {
+      //                   trigger: '.section-6',
+      //                   start: "40% bottom",
+      //                   end: "90% 90%",
+      //                   scrub: true,
+      //                   // markers: true,
+      //             },
+      //       })
+      // }, [])
 
       return (
-            <Section id="section-6" className="section-6 bg-white flex justify-center items-center relative overflow-hidden">
-                  <div className="fade-down-section-6 opacity-0 flex flex-col sm:flex-row items-center gap-[2rem]">
-                        <div className="w-1/2 sm:w-1/3 shrink-0 flex justify-center">
-                              <img src={nossasRedes}  />
-                        </div>
-                        <div className="flex flex-col gap-[1rem] ">
-                              <div className="flex gap-[1rem]">
-                                    <img src={icone01} className="w-[rem] h-[2.5rem]" />
-                                    <p>Lorem ipsum dolor sit amet, consectetur </p>
-                              </div>
-                              <div className="flex gap-[1rem]">
+            <footer id="section-6" className="section-6 bg-yellow-50 flex flex-col sm:flex-row gap-[3rem] justify-center items-center relative py-20 sm:py-40 px-4">
+                  <div className="w-1/2 sm:w-[15%] shrink-0 flex justify-center">
+                        <img src={saibaMais} />
+                  </div>
+                  <div className="flex flex-col gap-[1rem]">
+                        <div className="flex flex-col sm:flex-row gap-[1rem] ">
+                              <a href="https://www.instagram.com/cafecomprosatexas/" target="_blank" className="flex items-center gap-[1rem] hover:scale-105 ease-in-out duration-200">
+                                    <img src={icone01} className="w-[2.5rem] h-[2.5rem]" />
+                                    <p>@cafecomprosatexas</p>
+                              </a>
+                              <a href="https://www.instagram.com/cafecomprosatexas/" target="_blank" className="flex items-center gap-[1rem] hover:scale-105 ease-in-out duration-200">
                                     <img src={icone02} className="w-[2.5rem] h-[2.5rem]" />
-                                    <p>Lorem ipsum dolor sit amet, consectetur </p>
-                              </div>
+                                    <p>@cafecomprosatexas</p>
+                              </a>
                         </div>
-                        <div className="flex flex-col gap-[1rem]">
-                              <div className="flex gap-[1rem]">
+                        <div className="flex flex-col sm:flex-row gap-[1rem]">
+                              <a href="https://www.instagram.com/cafecomprosatexas/" target="_blank" className="flex items-center gap-[1rem] hover:scale-105 ease-in-out duration-200">
                                     <img src={icone03} className="w-[2.5rem] h-[2.5rem]" />
-                                    <p>Lorem ipsum dolor sit amet, consectetur </p>
-                              </div>
-                              <div className="flex gap-[1rem]">
+                                    <p>@cafecomprosatexas</p>
+                              </a>
+                              <a href="https://www.instagram.com/cafecomprosatexas/" target="_blank" className="flex items-center gap-[1rem] hover:scale-105 ease-in-out duration-200">
                                     <img src={icone04} className="w-[2.5rem] h-[2.5rem]" />
-                                    <p>Lorem ipsum dolor sit amet, consectetur </p>
-                              </div>
+                                    <p>@cafecomprosatexas</p>
+                              </a>
                         </div>
                   </div>
                   <img
@@ -60,9 +56,9 @@ const Section6 = () => {
                   />
                   <img
                         src={grafismo02}
-                        className="hidden sm:block absolute bottom-[-10%] left-[-3%]"
+                        className="hidden sm:block absolute bottom-0 left-[-3%]"
                   />
-            </Section>
+            </footer>
       )
 }
 

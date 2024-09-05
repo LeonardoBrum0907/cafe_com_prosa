@@ -1,11 +1,3 @@
-import imagem03 from "/assets/images/Rectangle 10.png";
-import imagem04 from "/assets/images/Rectangle 11.png";
-import imagem05 from "/assets/images/Rectangle 12.png";
-import imagem06 from "/assets/images/Rectangle 13.png";
-import imagem07 from "/assets/images/Rectangle 23.png";
-import imagem08 from "/assets/images/Rectangle 24.png";
-import imagem09 from "/assets/images/Rectangle 25.png";
-import imagem10 from "/assets/images/Rectangle 26.png";
 
 
 const Section4 = () => {
@@ -31,7 +23,20 @@ const Section4 = () => {
 
       return (
             <section id="section-4" className="section h-[100vh] flex sm:block">
-                  <div className="sm:h-[50%] sm:w-[100%] flex flex-col sm:flex-row relative">
+                  <iframe
+                        src="//lightwidget.com/widgets/9edcb3d6cc03515e9d2350a430f1e83c.html"
+                        title="Instagram Feed"
+                        className="lightwidget-widget"
+                        frameBorder="0"
+                        scrolling="no"
+                        style={{
+                              width: '100%',
+                              height: '600px', // ajuste o tamanho como desejar
+                              border: 'none',
+                              overflow: 'hidden'
+                        }}
+                  ></iframe>
+                  {/* <div className="sm:h-[50%] sm:w-[100%] flex flex-col sm:flex-row relative">
                         <img
                               src={imagem03}
                               alt="pessoas bebendo café em uma cafeteria"
@@ -77,7 +82,7 @@ const Section4 = () => {
                               alt="pessoas bebendo café em uma cafeteria"
                               className="w-full sm:w-[1/4] object-cover"
                         />
-                  </div>
+                  </div> */}
             </section>
       )
 }

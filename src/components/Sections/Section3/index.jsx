@@ -11,6 +11,22 @@ import cafezinho from "/assets/images/cafezinho.png";
 const Section3 = () => {
       const element = React.useRef();
       const tl = React.useRef();
+      const [name, setName] = React.useState('');
+      const [email, setEmail] = React.useState('');
+      const [phone, setPhone] = React.useState('');
+      const [instagram, setInstagram] = React.useState('');
+
+      function sendEmail(e) {
+            e.preventDefault();
+
+            if(name === "" ||  email === "" || phone === "" || instagram === "") {
+                  alert("Preencha todos os campos");
+                  return;
+            }
+
+
+            alert("teste");
+      }
 
       React.useLayoutEffect(() => {
             gsap.registerPlugin(useGSAP, ScrollTrigger);
@@ -59,12 +75,12 @@ const Section3 = () => {
                                     Buscamos criar um <b>ambiente acolhedor onde brasileiros se sintam em casa, possam compartilhar suas jornadas e encontrar apoio na comunidade.</b> Queremos fortalecer laços, promover o aprendizado e a partilha, reconhecendo a importância de cada história e experiência. Não temos a intenção de ser isolados ou de vender alguma coisa – você não vai ouvir falar de Herbalife ou Telexfree aqui. Nosso foco é fortalecer a comunidade, sem custo e sem pegadinhas. A troca de experiências é central para nosso crescimento coletivo. <b>Preencha o formulário ao lado e obtenha mais informações sobre o projeto!</b>
                               </p>
                         </div>
-                        <form id="animation-to-left" className="animation-timeline text-yellow-400 flex flex-col items-center gap-8 w-full sm:w-1/2 ease duration-200">
+                        <form id="animation-to-left" className="animation-timeline text-yellow-400 flex flex-col items-center gap-8 w-full sm:w-1/2 ease duration-200" onSubmit={sendEmail}>
                               <div className="bg-green-main sm:flex sm:flex-col sm:gap-y-[0.8rem] p-8 sm:px-[2.3rem] sm:pb-[2rem] sm:pt-[3.8rem] w-full shrink-0 rounded-2xl relative">
-                                    <Input label="NOME" />
-                                    <Input label="EMAIL" />
-                                    <Input label="TELEFONE" />
-                                    <Input label="INSTAGRAM" />
+                                    <Input onChange={(e) => setName(e.target.value)} label="NOME" />
+                                    <Input onChange={(e) => setEmail(e.target.value)} label="EMAIL" />
+                                    <Input onChange={(e) => setPhone(e.target.value)} label="TELEFONE" />
+                                    <Input onChange={(e) => setInstagram(e.target.value)} label="INSTAGRAM" />
                                     <img
                                           src={cafezinho}
                                           alt="xicara de café"

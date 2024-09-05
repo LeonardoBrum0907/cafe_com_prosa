@@ -56,15 +56,7 @@ const Section3 = () => {
                                     className="w-3/5"
                               />
                               <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-                                    efficitur turpis dolor, ut mattis ante eleifend sed. Sed gravida
-                                    nibh ut consectetur maximus. Integer volutpat vulputate risus sed
-                                    pulvinar. Quisque dictum quam quis quam sodales cursus. Nunc
-                                    volutpat bibendum est vel ultrices. In ex quam, ornare a
-                                    pellentesque ut, vestibulum at nulla. In efficitur est elit, in
-                                    facilisis neque ullamcorper sit amet. Class aptent taciti sociosqu
-                                    ad litora torquent per conubia nostra, per inceptos himenaeos.
-                                    Integer non.
+                                    Buscamos criar um <b>ambiente acolhedor onde brasileiros se sintam em casa, possam compartilhar suas jornadas e encontrar apoio na comunidade.</b> Queremos fortalecer laços, promover o aprendizado e a partilha, reconhecendo a importância de cada história e experiência. Não temos a intenção de ser isolados ou de vender alguma coisa – você não vai ouvir falar de Herbalife ou Telexfree aqui. Nosso foco é fortalecer a comunidade, sem custo e sem pegadinhas. A troca de experiências é central para nosso crescimento coletivo. <b>Preencha o formulário ao lado e obtenha mais informações sobre o projeto!</b>
                               </p>
                         </div>
                         <form id="animation-to-left" className="animation-timeline text-yellow-400 flex flex-col items-center gap-8 w-full sm:w-1/2 ease duration-200">

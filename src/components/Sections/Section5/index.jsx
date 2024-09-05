@@ -72,7 +72,7 @@ const Section5 = () => {
                   </div>
                   <img
                         src={cafeteira}
-                        className="right-section-5 ease duration-200 w-[10rem] sm:w-[25rem] absolute right-[50%] translate-x-1/2 sm:right-[10%] bottom-0 sm:bottom-[5%]"
+                        className="right-section-5 ease duration-200 w-[10rem] sm:w-[25rem] absolute right-[50%] translate-x-1/2 sm:right-[5%] bottom-0 sm:bottom-[5%]"
                   />
             </Section>
       )

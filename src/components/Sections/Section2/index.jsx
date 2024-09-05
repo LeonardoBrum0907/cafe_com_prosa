@@ -52,13 +52,13 @@ const Section2 = () => {
                               opacity: 1,
                               y: 0,
                         })
-                        // .fromTo("#animation-item-3", {
-                        //       opacity: 0,
-                        //       x: 160,
-                        // }, {
-                        //       opacity: 1,
-                        //       x: 0,
-                        // })
+                  // .fromTo("#animation-item-3", {
+                  //       opacity: 0,
+                  //       x: 160,
+                  // }, {
+                  //       opacity: 1,
+                  //       x: 0,
+                  // })
             }, el)
 
             return () => {
@@ -71,17 +71,10 @@ const Section2 = () => {
                   <div className="animation flex justify-center">
                         <img src={parceiros} alt="Parceiros" className="w-2/3 sm:w-80 left" />
                   </div>
-                  <div ref={el} className="flex flex-col w-full sm:flex-row gap-20 text-white">
+
+                  <div ref={el} className="flex flex-col w-full justify-center sm:flex-row gap-20 text-white">
                         <div id="animation-item-1" className="animation-timeline flex items-center flex-col gap-8 ease-in-out duration-200">
                               <img src={kingsland} alt="Kingsland" className="w-full" />
-                              <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut
-                                    mauris nisi. Phasellus sit amet interdum nunc. Integer id quam sed
-                                    nibh volutpat lacinia. Sed egestas ligula in efficitur luctus.
-                                    Suspendisse potenti. Vestibulum id placerat lacus. Donec ultricies
-                                    condimentum faucibus. Integer congue ex nunc, vel pharetra felis
-                                    dignissim sed.{" "}
-                              </p>
                         </div>
                         <div id="animation-item-2" className="animation-timeline flex items-center flex-col gap-8 ease-in-out duration-200">
                               <img
@@ -89,16 +82,11 @@ const Section2 = () => {
                                     alt="Kingsland international people groups"
                                     className="w-full"
                               />
-                              <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut
-                                    mauris nisi. Phasellus sit amet interdum nunc. Integer id quam sed
-                                    nibh volutpat lacinia. Sed egestas ligula in efficitur luctus.
-                                    Suspendisse potenti. Vestibulum id placerat lacus. Donec ultricies
-                                    condimentum faucibus. Integer congue ex nunc, vel pharetra felis
-                                    dignissim sed.
-                              </p>
                         </div>
                   </div>
+
+                  <p className="text-white w-[50rem]">Ao se tornar parceiro do <b>Café com Prosa</b>, você investe no <b>fortalecimento da comunidade brasileira em Katy</b>, apoiando encontros mensais que promovem conexões, suporte emocional e a preservação das tradições culturais. Seu apoio proporciona visibilidade para sua marca, que será destacada em eventos, redes sociais e materiais promocionais, alcançando um público que valoriza empresas comprometidas com a comunidade. Além de patrocinar um evento, sua parceria contribui para o bem-estar da comunidade, promovendo a cultura brasileira e a inclusão em um ambiente internacional. <b>O Café com Prosa é um projeto solidário</b>, sem custos para os participantes, e o apoio dos parceiros é <b>essencial para sua continuidade e qualidade.</b> Ao apoiar este projeto, você fortalece uma rede de brasileiros que se apoia e cresce em um novo país, promovendo a integração, amizades e o desenvolvimento pessoal e comunitário.</p>
+
                   <img
                         src={grafismo}
                         className="hidden sm:block sm:absolute sm:left-[-8%] sm:bottom-[-4%]"

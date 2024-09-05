@@ -4,25 +4,25 @@
 
 @font-face {
       font-family: 'title';
-      src: url('./assets/fonts/HELLOIMPERFECTREGULAR.TTF') format('truetype');
+      src: url('/assets/fonts/HELLOIMPERFECTREGULAR.TTF') format('truetype');
       font-weight: normal;
       font-style: normal;
 }
 @font-face {
       font-family: 'text';
-      src: url('./assets/fonts/GothamRoundedBold/GothamRoundedMedium.ttf') format('truetype');
+      src: url('/assets/fonts/GothamRoundedBold/GothamRoundedMedium.ttf') format('truetype');
       font-weight: normal;
       font-style: normal;
 }
 @font-face {
       font-family: 'text';
-      src: url('./assets/fonts/GothamRoundedBold/GothamRounded-MediumItalic.otf') format('truetype');
+      src: url('/assets/fonts/GothamRoundedBold/GothamRounded-MediumItalic.otf') format('truetype');
       font-weight: normal;
       font-style: italic;
 }
 @font-face {
       font-family: 'text';
-      src: url('./assets/fonts/GothamRoundedBold/GothamRoundedBold.ttf') format('truetype');
+      src: url('/assets/fonts/GothamRoundedBold/GothamRoundedBold.ttf') format('truetype');
       font-weight: bold;
       font-style: normal;
 }

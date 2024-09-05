@@ -35,17 +35,7 @@ const Section1 = () => {
                               <img src={quemSomos} alt="" className="w-[50%] sm:w-full" />
 
                               <p className="text-white">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut
-                                    mauris nisi. Phasellus sit amet interdum nunc. Integer id quam sed
-                                    nibh volutpat lacinia. Sed egestas ligula in efficitur luctus.
-                                    Suspendisse potenti. Vestibulum id placerat lacus. Donec ultricies
-                                    condimentum faucibus. Integer congue ex nunc, vel pharetra felis
-                                    dignissim sed. Sed et malesuada arcu. Maecenas a est malesuada quam
-                                    lacinia dictum. Aenean mattis, augue vitae pellentesque tincidunt,
-                                    orci justo placerat lectus, quis aliquet lectus leo eget mauris.
-                                    Pellentesque fringilla, nisl id bibendum convallis, tellus purus
-                                    mollis ante, sit amet auctor lacus eros vitae erat. Proin ut lectus
-                                    nec libero faucibus luctus.
+                                    O <b>Café com Prosa</b> é um projeto criado para capturar a essência descontraída das reuniões brasileiras, onde as despedidas são difíceis e as conversas se estendem com afeto e histórias. Voltado para <b>brasileiros em Katy</b>, o evento oferece um espaço para reviver a prosa em português, saborear delícias como pão de queijo e cafezinho, e relembrar a calorosa cultura brasileira. Realizado todo primeiro sábado do mês, das 9h às 11h, o objetivo é criar um espaço para compartilhar vivências, inspirar e aprender com os desafios de viver fora do Brasil. À medida que o grupo cresce, serão oferecidas oportunidades para contar histórias de superação e discutir lições que possam ajudar outros brasileiros. O evento é apoiado pela Igreja Batista de Kingsland, que fornece espaço e estrutura, mas a participação nos cultos não é obrigatória. Todos são bem-vindos, independentemente de religião ou crença, desde que estejam abertos a fazer parte da comunidade.
                               </p>
                         </div>
                   </Section>

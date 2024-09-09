@@ -16,6 +16,12 @@
 }
 @font-face {
       font-family: 'text';
+      src: url('/assets/fonts/GothamRoundedBold/GothamRoundedLight.ttf') format('truetype');
+      font-weight: 300;
+      font-style: normal;
+}
+@font-face {
+      font-family: 'text';
       src: url('/assets/fonts/GothamRoundedBold/GothamRounded-MediumItalic.otf') format('truetype');
       font-weight: normal;
       font-style: italic;
@@ -30,6 +36,7 @@
 body {
       font-family: 'text', sans-serif;
       font-size: 1rem;
+      font-weight: 300;
 
       .left {
             transform: translatex(100%);

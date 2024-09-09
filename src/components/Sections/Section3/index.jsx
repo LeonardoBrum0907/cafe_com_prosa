@@ -1,3 +1,4 @@
+import emailjs from '@emailjs/browser';
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -19,19 +20,35 @@ const Section3 = () => {
       function sendEmail(e) {
             e.preventDefault();
 
-            if(name === "" ||  email === "" || phone === "" || instagram === "") {
+            if (name === "" || email === "" || phone === "" || instagram === "") {
                   alert("Preencha todos os campos");
                   return;
             }
 
+            const templateParams = {
+                  from_name: name,
+                  phone: phone,
+                  email: email,
+                  instagram: instagram
 
-            alert("teste");
+            }
+
+            emailjs.send(import.meta.env.VITE_EMAILJS_SERVICE_ID, import.meta.env.VITE_EMAILJS_TEMPLATE_ID, templateParams, import.meta.env.VITE_EMAILJS_USER_ID)
+            .then((response) => {
+                  console.log('SUCCESS!', response.status, response.text);
+                  setName('');
+                  setEmail('');
+                  setPhone('');
+                  setInstagram('');
+            }, (err) => {
+                  console.log('ERRO:', err)
+            })
       }
 
       React.useLayoutEffect(() => {
             gsap.registerPlugin(useGSAP, ScrollTrigger);
 
-            const ctx = gsap.context(() => {
+            gsap.context(() => {
                   tl.current = gsap.timeline({
                         scrollTrigger: {
                               trigger: ".animation-timeline",

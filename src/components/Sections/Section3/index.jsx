@@ -40,8 +40,10 @@ const Section3 = () => {
                   setEmail('');
                   setPhone('');
                   setInstagram('');
+                  alert("Dados enviados com sucesso!");
             }, (err) => {
-                  console.log('ERRO:', err)
+                  console.log('ERRO:', err);
+                  alert("Tente novamente mais tarde.");
             })
       }
 
@@ -94,10 +96,10 @@ const Section3 = () => {
                         </div>
                         <form id="animation-to-left" className="animation-timeline text-yellow-400 flex flex-col items-center gap-8 w-full sm:w-1/2 ease duration-200" onSubmit={sendEmail}>
                               <div className="bg-green-main sm:flex sm:flex-col sm:gap-y-[0.8rem] p-8 sm:px-[2.3rem] sm:pb-[2rem] sm:pt-[3.8rem] w-full shrink-0 rounded-2xl relative">
-                                    <Input onChange={(e) => setName(e.target.value)} label="NOME" />
-                                    <Input onChange={(e) => setEmail(e.target.value)} label="EMAIL" />
-                                    <Input onChange={(e) => setPhone(e.target.value)} label="TELEFONE" />
-                                    <Input onChange={(e) => setInstagram(e.target.value)} label="INSTAGRAM" />
+                                    <Input value={name} onChange={(e) => setName(e.target.value)} label="NOME" />
+                                    <Input value={email} onChange={(e) => setEmail(e.target.value)} label="EMAIL" />
+                                    <Input value={phone} onChange={(e) => setPhone(e.target.value)} label="TELEFONE" />
+                                    <Input value={instagram} onChange={(e) => setInstagram(e.target.value)} label="INSTAGRAM" />
                                     <img
                                           src={cafezinho}
                                           alt="xicara de café"

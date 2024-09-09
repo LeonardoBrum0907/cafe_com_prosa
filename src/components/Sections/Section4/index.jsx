@@ -23,15 +23,16 @@ const Section4 = () => {
 
       return (
             <section id="section-4" className="section h-[100vh] flex sm:block">
+                  {/* <iframe src="//lightwidget.com/widgets/0dcc0a39a8ee5f949acc3005adb67faa.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe> */}
                   <iframe
-                        src="//lightwidget.com/widgets/9edcb3d6cc03515e9d2350a430f1e83c.html"
+                        src="//lightwidget.com/widgets/0dcc0a39a8ee5f949acc3005adb67faa.html"
                         title="Instagram Feed"
                         className="lightwidget-widget"
                         frameBorder="0"
                         scrolling="no"
                         style={{
                               width: '100%',
-                              height: '600px', // ajuste o tamanho como desejar
+                              // height: '600px', // ajuste o tamanho como desejar
                               border: 'none',
                               overflow: 'hidden'
                         }}

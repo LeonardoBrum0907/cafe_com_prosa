@@ -1,9 +1,6 @@
 // import React from "react";
 import grafismo02 from "/assets/images/grafismo_02.png";
-import icone01 from "/assets/images/icone_01.png";
-import icone02 from "/assets/images/icone_02.png";
 import icone03 from "/assets/images/icone_03.png";
-import icone04 from "/assets/images/icone_04.png";
 import saibaMais from "/assets/images/saiba_mais.png";
 
 const Section6 = () => {
@@ -31,15 +28,15 @@ const Section6 = () => {
                   <div className="flex flex-col gap-[1rem]">
                         <div className="flex flex-col sm:flex-row gap-[1rem] ">
                               <a href="https://www.instagram.com/cafecomprosatexas/" target="_blank" className="flex items-center gap-[1rem] hover:scale-105 ease-in-out duration-200">
-                                    <img src={icone01} className="w-[2.5rem] h-[2.5rem]" />
+                                    <img src={icone03} className="w-[2.5rem] h-[2.5rem]" />
                                     <p>@cafecomprosatexas</p>
                               </a>
-                              <a href="https://www.instagram.com/cafecomprosatexas/" target="_blank" className="flex items-center gap-[1rem] hover:scale-105 ease-in-out duration-200">
+                              {/* <a href="https://www.instagram.com/cafecomprosatexas/" target="_blank" className="flex items-center gap-[1rem] hover:scale-105 ease-in-out duration-200">
                                     <img src={icone02} className="w-[2.5rem] h-[2.5rem]" />
                                     <p>@cafecomprosatexas</p>
-                              </a>
+                              </a> */}
                         </div>
-                        <div className="flex flex-col sm:flex-row gap-[1rem]">
+                        {/* <div className="flex flex-col sm:flex-row gap-[1rem]">
                               <a href="https://www.instagram.com/cafecomprosatexas/" target="_blank" className="flex items-center gap-[1rem] hover:scale-105 ease-in-out duration-200">
                                     <img src={icone03} className="w-[2.5rem] h-[2.5rem]" />
                                     <p>@cafecomprosatexas</p>
@@ -48,7 +45,7 @@ const Section6 = () => {
                                     <img src={icone04} className="w-[2.5rem] h-[2.5rem]" />
                                     <p>@cafecomprosatexas</p>
                               </a>
-                        </div>
+                        </div> */}
                   </div>
                   <img
                         src={grafismo02}

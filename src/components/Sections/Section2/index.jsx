@@ -4,8 +4,8 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import React from 'react';
 import Section from '../../SectionLayout';
 import grafismo from "/assets/images/grafismo_01.png";
-import kingsland from "/assets/images/logo_01.png";
-import kingslandInternational from "/assets/images/logo_02.png";
+import kingsland from "/assets/images/logo_01.svg";
+import kingslandInternational from "/assets/images/logo_02.svg";
 import parceiros from "/assets/images/parceiros.png";
 
 

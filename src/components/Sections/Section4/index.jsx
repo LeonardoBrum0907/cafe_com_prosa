@@ -22,7 +22,7 @@ const Section4 = () => {
       // }, [])
 
       return (
-            <section id="section-4" className="section h-[100vh] flex sm:block">
+            <section id="section-4" className="section flex sm:block">
                   {/* <iframe src="//lightwidget.com/widgets/0dcc0a39a8ee5f949acc3005adb67faa.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe> */}
                   <iframe
                         src="//lightwidget.com/widgets/0dcc0a39a8ee5f949acc3005adb67faa.html"
